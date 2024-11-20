@@ -1,0 +1,44 @@
+[
+    {
+      "id": 1,
+      "authorName": "John Doe",
+      "postingDate": "2024-11-20",
+      "title": "Exploring the Cosmos",
+      "coverImage": "https://i.ibb.co.com/xJPXJjG/1.jpg",
+      "authorImage": "https://i.ibb.co.com/PxMsrN2/girl2.jpg",
+      "tags": ["Space", "Astronomy", "Science"],
+      "readingTime": 8
+    },
+    {
+      "id": 2,
+      "authorName": "Jane Smith",
+      "postingDate": "2024-11-18",
+      "title": "Mastering React",
+      "coverImage": "https://i.ibb.co.com/S0yvgPR/2.png",
+      "authorImage": "https://i.ibb.co.com/f8vThbp/girl1.jpg",
+      "tags": ["Programming", "React", "JavaScript"],
+      "readingTime": 12
+    },
+    {
+      "id": 3,
+      "authorName": "Alex Brown",
+      "postingDate": "2024-11-15",
+      "title": "Healthy Living Tips",
+      "coverImage": "https://i.ibb.co.com/GV1Ky2x/3.png",
+      "authorImage": "https://i.ibb.co.com/cNcvchD/boy2.jpg",
+      "tags": ["Health", "Wellness", "Lifestyle"],
+      "readingTime": 5
+    },
+    {
+      "id": 4,
+      "authorName": "Emily White",
+      "postingDate": "2024-11-12",
+      "title": "Art of Minimalism",
+      "coverImage": "https://i.ibb.co.com/f2BDfBv/4.jpg",
+      "authorImage": "https://i.ibb.co.com/0FjXtcX/boy1.png",
+      "tags": ["Lifestyle", "Minimalism", "Design"],
+      "readingTime": 7
+    }
+  ]
+
+  
