@@ -14,9 +14,12 @@ const[readingTime,setReadingTime]=useState(0)
   setBookmark(newBookMarks)
  }
 
- const handleReadingTime = (time) =>{
+ const handleReadingTime = (time,id) =>{
   const totalTime = readingTime + time;
   setReadingTime(totalTime)
+
+  const removeBookmark = bookmark.filter(bookmark=> bookmark.id !== id)
+  setBookmark(removeBookmark)
   
  }
 

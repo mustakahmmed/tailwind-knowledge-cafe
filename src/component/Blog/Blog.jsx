@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 
 const Blog = ({ blog,handleSetBookmark,handleReadingTime}) => {
     console.log(blog)
-    const{title,coverImage,authorImage,authorName,readingTime,postingDate,tags}=blog
+    const{title,coverImage,authorImage,authorName,readingTime,postingDate,tags,id}=blog
     return (
         <div>
 <div className='my-10 shadow-2xl pb-3'>
@@ -28,7 +28,7 @@ const Blog = ({ blog,handleSetBookmark,handleReadingTime}) => {
 {
     tags.map((tag,index) => <span className='m-4 font-bold text-gray-600 mb-8' key={index}><a href="">  #{tag}</a></span>)
 }
-<button onClick={()=>handleReadingTime(readingTime)} className='px-4 py-2 bg-slate-500 block rounded-xl font-bold text-white mx-4 my-7 mb-5 hover:bg-gradient-to-r from-purple-500 to-blue-500'>Mark As Read</button>
+<button onClick={()=>handleReadingTime(readingTime,id)} className='px-4 py-2 bg-slate-500 block rounded-xl font-bold text-white mx-4 my-7 mb-5 hover:bg-gradient-to-r from-purple-500 to-blue-500'>Mark As Read</button>
 </div>
         </div>
     );
