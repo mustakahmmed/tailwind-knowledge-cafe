@@ -1,7 +1,7 @@
 import PropTypes from 'prop-types';
 
 
-const Blog = ({ blog,handleSetBookmark }) => {
+const Blog = ({ blog,handleSetBookmark,handleReadingTime}) => {
     console.log(blog)
     const{title,coverImage,authorImage,authorName,readingTime,postingDate,tags}=blog
     return (
@@ -19,7 +19,7 @@ const Blog = ({ blog,handleSetBookmark }) => {
         </div>
     </div>
     <div>
-        <h3 className=''>{`${readingTime} min read`} <button onClick={()=>handleSetBookmark(blog)} className='ml-1 hover:bg-slate-200 px-3 py-2 rounded-full'><i class="fa-regular fa-bookmark"></i></button></h3>
+        <h3 className=''><span id='readingTime'>{readingTime} </span> Min read<button onClick={()=>handleSetBookmark(blog)} className='ml-1 hover:bg-slate-200 px-3 py-2 rounded-full'><i class="fa-regular fa-bookmark"></i></button></h3>
         
     </div>
 </div>
@@ -28,7 +28,7 @@ const Blog = ({ blog,handleSetBookmark }) => {
 {
     tags.map((tag,index) => <span className='m-4 font-bold text-gray-600 mb-8' key={index}><a href="">  #{tag}</a></span>)
 }
-<button className='px-4 py-2 bg-slate-500 block rounded-xl font-bold text-white mx-4 my-7 mb-5 hover:bg-gradient-to-r from-purple-500 to-blue-500'>Mark As Read</button>
+<button onClick={()=>handleReadingTime(readingTime)} className='px-4 py-2 bg-slate-500 block rounded-xl font-bold text-white mx-4 my-7 mb-5 hover:bg-gradient-to-r from-purple-500 to-blue-500'>Mark As Read</button>
 </div>
         </div>
     );
